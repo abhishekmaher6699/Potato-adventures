@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 70vw;
+    margin: 0 auto;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+h1{
+    font-size: 2.5em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(41, 45, 45);
+    text-align: center;
+
+}
+
+.desc{
+    font-family: Helvetica;
+    color: rgb(77, 84, 90);
+}
+.card-container{
+    display: grid;
+}
+.card-grid{
+    padding-top: 4rem;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fill, minmax(260px,1fr));
+
+}
+.card{
+    height: 350px;
+    border: 1px solid rgb(222, 222, 222);
+    border-radius: 5px 5px 5px 5px;
+    overflow: hidden;
+}
+
+.card:hover{
+    box-shadow: 0 1px 1px rgba(0,0,0,0.08), 0 2px 2px rgba(0,0,0,0.12), 0 4px 4px rgba(0,0,0,0.16), 0 8px 8px rgba(0,0,0,0.20);
+}
+.img-container{
+    position: relative;
+    overflow: hidden;
+    height: 70%;
+}
+
+img{
+    position: absolute;
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
+    width: 100%;
+    border-radius: 5px 5px 0px 0px;
+
+}
+.card:hover img{
+    transform: scale(1.05);
+}
+
+.card-info{
+    /* background-color: #f4fcfb; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* gap: 0.rem; */
+    padding-left: 0.4em;
+    height: 30%;
+}
+
+.card-title{
+    padding-top: 0.4em;
+    font-size: 1.3rem;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(51, 51, 47);
+}
+
+.card-desc{
+    font-size: 0.9rem;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif
+
+}
+
+.clickedon{
+    text-align: end;
+}
+.clickedon p{
+    font-size: 0.6rem;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(137, 191, 246);
+    display: inline-block;
+    padding: 0.4rem 0.2rem;
+    border-radius: 5px 0 0 0 ;
+}
+
+span{
+    font-weight: bold;
+}
+footer{
+    margin: 3rem 0;
+    text-align: center;
+}
+
+.conclusion{
+    font-family: Helvetica;
+    color: rgb(77, 84, 90);
+}
